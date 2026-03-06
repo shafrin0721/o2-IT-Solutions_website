@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | O2 Software Solutions</title>
+    <meta name="description" content="Get in touch with O2 Software Solutions. We're ready to help with your next project.">
+    <link rel="icon" type="image/png" href="images/O2-icon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">
+                    <img src="images/O2-logo.png" alt="O2 Software Solutions">
+                </a>
+                
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="careers.html" class="nav-link">Careers</a>
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </nav>
+                
+                <div class="nav-cta">
+                    <a href="contact.html" class="btn btn-primary">Get Started</a>
+                </div>
+                
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <span class="badge badge-primary">Contact Us</span>
+            <h1>Let's Talk</h1>
+            <p>Have a project in mind? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <span class="badge badge-secondary">Get In Touch</span>
+                    <h2>Ready to Start Your Project?</h2>
+                    <p>Fill out the form or reach out to us directly. We're here to help transform your ideas into reality.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-text">
+                                <h4>Office Location</h4>
+                                <p>Colombo, Sri Lanka</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-text">
+                                <h4>Email Us</h4>
+                                <p>hello@02itsolutions.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-text">
+                                <h4>Call Us</h4>
+                                <p>+94 77 000 0000</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">🕐</div>
+                            <div class="contact-text">
+                                <h4>Working Hours</h4>
+                                <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Links -->
+                    <div>
+                        <h4 style="margin-bottom: 16px;">Follow Us</h4>
+                        <div class="footer-socials">
+                            <a href="#" class="footer-social">in</a>
+                            <a href="#" class="footer-social">𝕏</a>
+                            <a href="#" class="footer-social">gh</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+94 77 000 0000">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service" style="width: 100%; padding: 14px 18px; border: 2px solid var(--border); border-radius: var(--radius-md); font-size: 1rem; transition: var(--transition);">
+                                <option value="">Select a service</option>
+                                <option value="web">Web Development</option>
+                                <option value="mobile">Mobile Development</option>
+                                <option value="design">UI/UX Design</option>
+                                <option value="cloud">Cloud Solutions</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your project..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section style="padding-bottom: 80px;">
+        <div class="container">
+            <div style="background: var(--bg-surface); border-radius: var(--radius-xl); padding: 60px; text-align: center; box-shadow: var(--shadow-md);">
+                <div style="font-size: 3rem; margin-bottom: 16px;">🌍</div>
+                <h3 style="margin-bottom: 12px;">Serving Clients Worldwide</h3>
+                <p style="max-width: 600px; margin: 0 auto;">While we're based in Colombo, Sri Lanka, we work with clients globally. Through video calls, emails, and project management tools, we ensure seamless collaboration regardless of location.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" style="background: var(--bg-main);">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge badge-primary">FAQ</span>
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions</p>
+            </div>
+            
+            <div class="services-grid" style="grid-template-columns: 1fr 1fr;">
+                <div class="service-card" style="text-align: left;">
+                    <h3 style="font-size: 1.1rem; margin-bottom: 12px;">What are your payment terms?</h3>
+                    <p style="font-size: 0.95rem;">We offer flexible payment options including milestone-based payments. Contact us to discuss the best arrangement for your project.</p>
+                </div>
+                
+                <div class="service-card" style="text-align: left;">
+                    <h3 style="font-size: 1.1rem; margin-bottom: 12px;">How long does a typical project take?</h3>
+                    <p style="font-size: 0.95rem;">Project timelines vary based on complexity. A simple website takes 2-4 weeks, while complex web applications may take 2-6 months.</p>
+                </div>
+                
+                <div class="service-card" style="text-align: left;">
+                    <h3 style="font-size: 1.1rem; margin-bottom: 12px;">Do you offer post-launch support?</h3>
+                    <p style="font-size: 0.95rem;">Yes! We offer ongoing maintenance and support packages to keep your product running smoothly after launch.</p>
+                </div>
+                
+                <div class="service-card" style="text-align: left;">
+                    <h3 style="font-size: 1.1rem; margin-bottom: 12px;">Can you work with our existing team?</h3>
+                    <p style="font-size: 0.95rem;">Absolutely! We frequently collaborate with in-house teams as supplementary resources or provide dedicated teams for specific projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="images/O2-logo.png" alt="O2 Software Solutions">
+                    </a>
+                    <p>Your trusted partner for innovative digital solutions.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="footer-social">in</a>
+                        <a href="#" class="footer-social">𝕏</a>
+                        <a href="#" class="footer-social">gh</a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Mobile Apps</a></li>
+                        <li><a href="services.html">UI/UX Design</a></li>
+                        <li><a href="services.html">Cloud Solutions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li>📍 Colombo, Sri Lanka</li>
+                        <li>📧 hello@02itsolutions.com</li>
+                        <li>📞 +94 77 000 0000</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 O2 Software Solutions. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
+

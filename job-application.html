@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application | O2 Software Solutions</title>
+    <meta name="description" content="Apply for a position at O2 Software Solutions">
+    <link rel="icon" type="image/png" href="images/O2-icon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        .application-header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 40px 0;
+            margin-bottom: 40px;
+        }
+        
+        .job-details-card {
+            background: var(--bg-surface);
+            border-radius: var(--radius-lg);
+            padding: 32px;
+            margin-bottom: 32px;
+            box-shadow: var(--shadow-md);
+        }
+        
+        .job-details-card h3 {
+            margin-bottom: 16px;
+            color: var(--primary);
+        }
+        
+        .job-meta-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-right: 24px;
+            margin-bottom: 12px;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+        
+        .job-description {
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+        }
+        
+        .job-description h4 {
+            margin-bottom: 12px;
+        }
+        
+        .job-description ul {
+            list-style: disc;
+            padding-left: 24px;
+            color: var(--text-secondary);
+        }
+        
+        .job-description li {
+            margin-bottom: 8px;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary);
+            font-weight: 500;
+            margin-bottom: 24px;
+        }
+        
+        .back-link:hover {
+            gap: 12px;
+        }
+        
+        .required-note {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 24px;
+        }
+        
+        .success-message {
+            display: none;
+            text-align: center;
+            padding: 60px 40px;
+            background: var(--bg-surface);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .success-message.show {
+            display: block;
+        }
+        
+        .success-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(0, 168, 150, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            margin: 0 auto 24px;
+        }
+        
+        .success-message h3 {
+            color: var(--secondary);
+            margin-bottom: 12px;
+        }
+        
+        .success-message p {
+            max-width: 400px;
+            margin: 0 auto 24px;
+        }
+        
+        .form-section {
+            margin-bottom: 32px;
+        }
+        
+        .form-section-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--text-main);
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--primary);
+        }
+        
+        .file-upload {
+            border: 2px dashed var(--border);
+            border-radius: var(--radius-md);
+            padding: 32px;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .file-upload:hover {
+            border-color: var(--primary);
+            background: rgba(0, 102, 204, 0.02);
+        }
+        
+        .file-upload input {
+            display: none;
+        }
+        
+        .file-upload-icon {
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+        
+        .file-upload-text {
+            color: var(--text-secondary);
+        }
+        
+        .file-upload-text span {
+            color: var(--primary);
+            font-weight: 600;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+        
+        .checkbox-group input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin-top: 2px;
+            accent-color: var(--primary);
+        }
+        
+        .checkbox-group label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">
+                    <img src="images/O2-logo.png" alt="O2 Software Solutions">
+                </a>
+                
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="careers.html" class="nav-link active">Careers</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+                
+                <div class="nav-cta">
+                    <a href="contact.html" class="btn btn-primary">Get Started</a>
+                </div>
+                
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Application Form -->
+    <section class="section">
+        <div class="container">
+            <a href="careers.html" class="back-link">← Back to Careers</a>
+            
+            <div class="row">
+                <div class="col-lg-4">
+                    <!-- Job Details -->
+                    <div class="job-details-card">
+                        <span class="badge badge-primary" id="jobType">Full-Time</span>
+                        <h3 id="jobTitle">Senior Frontend Developer</h3>
+                        
+                        <div class="job-meta">
+                            <span class="job-meta-item">📍 <span id="jobLocation">Colombo</span></span>
+                            <span class="job-meta-item">💼 <span id="jobDepartment">Engineering</span></span>
+                            <span class="job-meta-item">💼 Experience</span>
+                        </div>
+                        
+                        <div class="job-description">
+                            <h4>Requirements</h4>
+                            <ul id="jobRequirements">
+                                <li>3+ years of experience in frontend development</li>
+                                <li>Proficiency in React, Vue, or Angular</li>
+                                <li>Strong understanding of web technologies</li>
+                                <li>Experience with responsive design</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="job-description">
+                            <h4>Responsibilities</h4>
+                            <ul id="jobResponsibilities">
+                                <li>Build and maintain responsive web applications</li>
+                                <li>Collaborate with design and backend teams</li>
+                                <li>Write clean, maintainable code</li>
+                                <li>Participate in code reviews</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-8">
+                    <!-- Success Message -->
+                    <div class="success-message" id="successMessage">
+                        <div class="success-icon">✓</div>
+                        <h3>Application Submitted!</h3>
+                        <p>Thank you for applying! We've received your application and will review it shortly. We'll get back to you within 2-3 business days.</p>
+                        <a href="careers.html" class="btn btn-primary">View More Jobs</a>
+                    </div>
+                    
+                    <!-- Application Form -->
+                    <div class="card" id="applicationForm">
+                        <h2 style="margin-bottom: 8px;">Apply for this Position</h2>
+                        <p class="required-note">* All fields are required</p>
+                        
+                        <form id="jobApplicationForm">
+                            <!-- Personal Information -->
+                            <div class="form-section">
+                                <div class="form-section-title">Personal Information</div>
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="firstName">First Name *</label>
+                                            <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="lastName">Last Name *</label>
+                                            <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="email">Email Address *</label>
+                                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="phone">Phone Number *</label>
+                                            <input type="tel" id="phone" name="phone" placeholder="+94 77 000 0000" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="address">Address *</label>
+                                    <input type="text" id="address" name="address" placeholder="Your address" required>
+                                </div>
+                            </div>
+                            
+                            <!-- Professional Information -->
+                            <div class="form-section">
+                                <div class="form-section-title">Professional Information</div>
+                                
+                                <div class="form-group">
+                                    <label for="linkedin">LinkedIn Profile URL</label>
+                                    <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/yourprofile">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="portfolio">Portfolio / Website</label>
+                                    <input type="url" id="portfolio" name="portfolio" placeholder="https://yourportfolio.com">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="github">GitHub Profile</label>
+                                    <input type="url" id="github" name="github" placeholder="https://github.com/yourusername">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="experience">Years of Experience *</label>
+                                    <select id="experience" name="experience" required>
+                                        <option value="">Select experience</option>
+                                        <option value="0-1">Less than 1 year</option>
+                                        <option value="1-2">1-2 years</option>
+                                        <option value="2-3">2-3 years</option>
+                                        <option value="3-5">3-5 years</option>
+                                        <option value="5-10">5-10 years</option>
+                                        <option value="10+">10+ years</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="currentCompany">Current Company</label>
+                                    <input type="text" id="currentCompany" name="currentCompany" placeholder="Where do you currently work?">
+                                </div>
+                            </div>
+                            
+                            <!-- Application Details -->
+                            <div class="form-section">
+                                <div class="form-section-title">Application Details</div>
+                                
+                                <div class="form-group">
+                                    <label for="startDate">When can you start? *</label>
+                                    <input type="date" id="startDate" name="startDate" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="coverLetter">Cover Letter *</label>
+                                    <textarea id="coverLetter" name="coverLetter" rows="5" placeholder="Tell us why you're the perfect fit for this role..." required></textarea>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label>Resume/CV *</label>
+                                    <div class="file-upload" onclick="document.getElementById('resume').click()">
+                                        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+                                        <div class="file-upload-icon">📄</div>
+                                        <div class="file-upload-text">
+                                            Click to upload or drag and drop<br>
+                                            <span>PDF, DOC, or DOCX</span> (Max 5MB)
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label>Additional Documents (Optional)</label>
+                                    <div class="file-upload" onclick="document.getElementById('additionalDocs').click()">
+                                        <input type="file" id="additionalDocs" name="additionalDocs" accept=".pdf,.doc,.docx" multiple>
+                                        <div class="file-upload-icon">📁</div>
+                                        <div class="file-upload-text">
+                                            Click to upload additional documents<br>
+                                            <span>Certificates, Work Samples, etc.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Agreement -->
+                            <div class="form-section">
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="terms" name="terms" required>
+                                    <label for="terms">I agree to the processing of my personal data for recruitment purposes and confirm that all information provided is accurate.</label>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Application</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="images/O2-logo.png" alt="O2 Software Solutions">
+                    </a>
+                    <p>Your trusted partner for innovative digital solutions.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="footer-social">in</a>
+                        <a href="#" class="footer-social">𝕏</a>
+                        <a href="#" class="footer-social">gh</a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Mobile Apps</a></li>
+                        <li><a href="services.html">UI/UX Design</a></li>
+                        <li><a href="services.html">Cloud Solutions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li>📍 Colombo, Sri Lanka</li>
+                        <li>📧 hello@02itsolutions.com</li>
+                        <li>📞 +94 77 000 0000</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 O2 Software Solutions. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    
+    <script>
+        // Get job details from URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const jobId = urlParams.get('job');
+        
+        const jobs = {
+            'frontend': {
+                title: 'Senior Frontend Developer',
+                type: 'Full-Time',
+                location: 'Colombo',
+                department: 'Engineering',
+                requirements: [
+                    '3+ years of experience in frontend development',
+                    'Proficiency in React, Vue, or Angular',
+                    'Strong understanding of web technologies',
+                    'Experience with responsive design',
+                    'Knowledge of modern build tools'
+                ],
+                responsibilities: [
+                    'Build and maintain responsive web applications',
+                    'Collaborate with design and backend teams',
+                    'Write clean, maintainable code',
+                    'Participate in code reviews',
+                    'Mentor junior developers'
+                ]
+            },
+            'designer': {
+                title: 'UI/UX Designer',
+                type: 'Full-Time',
+                location: 'Colombo',
+                department: 'Design',
+                requirements: [
+                    '2+ years of UI/UX design experience',
+                    'Proficiency in Figma, Sketch, or Adobe XD',
+                    'Strong portfolio showcasing design work',
+                    'Understanding of user research',
+                    'Experience with design systems'
+                ],
+                responsibilities: [
+                    'Create user-centered designs',
+                    'Develop wireframes and prototypes',
+                    'Collaborate with developers',
+                    'Conduct user testing',
+                    'Maintain design consistency'
+                ]
+            },
+            'backend': {
+                title: 'Backend Developer',
+                type: 'Full-Time',
+                location: 'Remote',
+                department: 'Engineering',
+                requirements: [
+                    '3+ years of backend development experience',
+                    'Proficiency in Node.js, Python, or Java',
+                    'Experience with databases (SQL/NoSQL)',
+                    'Understanding of RESTful APIs',
+                    'Knowledge of cloud services'
+                ],
+                responsibilities: [
+                    'Develop server-side applications',
+                    'Design and implement APIs',
+                    'Optimize database queries',
+                    'Ensure security best practices',
+                    'Write technical documentation'
+                ]
+            },
+            'devops': {
+                title: 'DevOps Engineer',
+                type: 'Full-Time',
+                location: 'Colombo',
+                department: 'Operations',
+                requirements: [
+                    '2+ years of DevOps experience',
+                    'Experience with AWS, Azure, or GCP',
+                    'Knowledge of Docker and Kubernetes',
+                    'CI/CD pipeline expertise',
+                    'Scripting skills (Bash, Python)'
+                ],
+                responsibilities: [
+                    'Manage cloud infrastructure',
+                    'Implement CI/CD pipelines',
+                    'Monitor system performance',
+                    'Ensure security compliance',
+                    'Automate deployment processes'
+                ]
+            },
+            'manager': {
+                title: 'Project Manager',
+                type: 'Full-Time',
+                location: 'Colombo',
+                department: 'Management',
+                requirements: [
+                    '3+ years of project management experience',
+                    'PMP or Scrum certification preferred',
+                    'Experience with agile methodologies',
+                    'Strong communication skills',
+                    'Technical background preferred'
+                ],
+                responsibilities: [
+                    'Lead project planning sessions',
+                    'Coordinate with stakeholders',
+                    'Manage project timelines',
+                    'Track budget and resources',
+                    'Ensure quality deliverables'
+                ]
+            },
+            'qa': {
+                title: 'QA Engineer',
+                type: 'Part-Time',
+                location: 'Remote',
+                department: 'Testing',
+                requirements: [
+                    '1+ years of QA experience',
+                    'Knowledge of testing methodologies',
+                    'Experience with test automation',
+                    'Attention to detail',
+                    'Strong analytical skills'
+                ],
+                responsibilities: [
+                    'Create test plans and cases',
+                    'Execute manual and automated tests',
+                    'Report and track bugs',
+                    'Collaborate with developers',
+                    'Ensure product quality'
+                ]
+            }
+        };
+        
+        // Set job details if valid job
+        if (jobId && jobs[jobId]) {
+            const job = jobs[jobId];
+            document.getElementById('jobTitle').textContent = job.title;
+            document.getElementById('jobType').textContent = job.type;
+            document.getElementById('jobLocation').textContent = job.location;
+            document.getElementById('jobDepartment').textContent = job.department;
+            
+            const reqList = document.getElementById('jobRequirements');
+            reqList.innerHTML = job.requirements.map(req => `<li>${req}</li>`).join('');
+            
+            const respList = document.getElementById('jobResponsibilities');
+            respList.innerHTML = job.responsibilities.map(resp => `<li>${resp}</li>`).join('');
+        }
+        
+        // Form submission
+        const form = document.getElementById('jobApplicationForm');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show success message
+            document.getElementById('applicationForm').style.display = 'none';
+            document.getElementById('successMessage').classList.add('show');
+            
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            
+            console.log('Job application submitted!');
+        });
+        
+        // File upload display
+        const resumeInput = document.getElementById('resume');
+        resumeInput.addEventListener('change', function() {
+            if (this.files.length > 0) {
+                const fileName = this.files[0].name;
+                this.parentElement.querySelector('.file-upload-text').innerHTML = 
+                    `Selected: <span>${fileName}</span>`;
+            }
+        });
+    </script>
+</body>
+</html>
+
